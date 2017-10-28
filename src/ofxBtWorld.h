@@ -56,7 +56,7 @@ public:
 	
 	btRigidBody* addRigidBody(btCollisionShape* shape, const ofVec3f& pos, const ofVec3f& rot, float mass = 1);
 	void removeRigidBody(btRigidBody* body);
-	
+    btDynamicsWorld * getWorld() const { return m_dynamicsWorld; }
 	//
 
 protected:
